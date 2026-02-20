@@ -1,11 +1,10 @@
-import asyncio
-import sys
 from fastapi import FastAPI
-from routes.api import router as api_router
+from routes import api, ytdl
 
-app = FastAPI(title="Orsta API")
-app.include_router(api_router, prefix="/api")
+app = FastAPI()
 
+app.include_router(api.router)
+app.include_router(ytdl.router)
 if __name__ == "__main__":
     import uvicorn
 
