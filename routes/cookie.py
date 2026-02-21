@@ -34,7 +34,7 @@ async def _fetch_cookies(url: str, netscape: bool) -> str:
         context = await browser.new_context()
         page = await context.new_page()
 
-        await page.goto(url, wait_until="networkidle")
+        await page.goto(url, wait_until="domcontentloaded")
         cookies = await context.cookies()
         await browser.close()
 
