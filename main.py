@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-from routes import api, ytdl
+from routes import cookie, ytdl
 
 app = FastAPI()
 
-app.include_router(api.router)
+app.include_router(cookie.router)
 app.include_router(ytdl.router)
+
 if __name__ == "__main__":
     import uvicorn
 

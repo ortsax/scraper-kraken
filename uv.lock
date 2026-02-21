@@ -154,6 +154,7 @@ dependencies = [
     { name = "fastapi" },
     { name = "playwright" },
     { name = "requests" },
+    { name = "spotify-dlp" },
     { name = "uvicorn" },
     { name = "yt-dlp" },
 ]
@@ -163,6 +164,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.129.0" },
     { name = "playwright", specifier = ">=1.58.0" },
     { name = "requests", specifier = ">=2.32.5" },
+    { name = "spotify-dlp", specifier = ">=2.6.0" },
     { name = "uvicorn", specifier = ">=0.41.0" },
     { name = "yt-dlp", specifier = ">=2026.2.4" },
 ]
@@ -265,6 +267,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c9/74/b3ff8e6c8446842c3f5c837e9c3dfcfe2018ea6ecef224c710c85ef728f4/requests-2.32.5.tar.gz", hash = "sha256:dbba0bac56e100853db0ea71b82b4dfd5fe2bf6d3754a8893c3af500cec7d7cf", size = 134517, upload-time = "2025-08-18T20:46:02.573Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl", hash = "sha256:2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6", size = 64738, upload-time = "2025-08-18T20:46:00.542Z" },
+]
+
+[[package]]
+name = "spotify-dlp"
+version = "2.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+    { name = "yt-dlp" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ea/67/c8f388237c4a3ceb751a9f4d3dfd0247df0586ed2b6d61838471923dbe48/spotify_dlp-2.6.0.tar.gz", hash = "sha256:1849dd4b0f4d9104a0bc2e08775a81cad5b36273e13c3cf86e771e0d502fc55a", size = 11942, upload-time = "2025-12-20T07:52:11.533Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/cb/5b250137f14b18f94ede15e6fed661eda2f6dd8c8ae8fe08ecbbbbca5c67/spotify_dlp-2.6.0-py3-none-any.whl", hash = "sha256:458264a1c50a77ee9d161ad71383682f48d88c98f70caa5f0b008f7b7683c15e", size = 11636, upload-time = "2025-12-20T07:52:10.56Z" },
 ]
 
 [[package]]
