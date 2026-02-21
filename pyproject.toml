@@ -6,9 +6,9 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.129.0",
+    "httpx>=0.28.1",
     "playwright>=1.58.0",
     "requests>=2.32.5",
-    "spotify-dlp>=2.6.0",
     "uvicorn>=0.41.0",
     "yt-dlp>=2026.2.4",
 ]

@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-from routes import cookie, ytdl
+from routes import cookie, ytdl, spotify
 
 app = FastAPI()
 
 app.include_router(cookie.router)
 app.include_router(ytdl.router)
+app.include_router(spotify.router)
 
 if __name__ == "__main__":
     import uvicorn

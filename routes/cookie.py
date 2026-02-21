@@ -4,7 +4,6 @@ import concurrent.futures
 import time
 
 from fastapi import APIRouter, Query, HTTPException
-from routes.cookie import getCookie
 
 router = APIRouter()
 
