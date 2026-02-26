@@ -1,8 +1,4 @@
-## Orsta.py
-
-A simple REST API for miscellaneous utility tasks.
-
-### Installation
+## Scraper Kraken
 
 To get started with the project, ensure you have Python 3.14 and `uv` installed.
 
