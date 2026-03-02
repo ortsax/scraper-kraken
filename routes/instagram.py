@@ -59,7 +59,7 @@ async def download_instagram_media(data: InstagramRequest):
 @router.post("/stories")
 async def get_instagram_stories(data: InstagramStoriesRequest):
     def run_sync():
-        loop = asyncio.ProactorEventLoop()
+        loop = asyncio.new_event_loop()
         try:
             return loop.run_until_complete(execute_automation())
         finally:

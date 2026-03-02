@@ -21,7 +21,7 @@ _semaphore = asyncio.Semaphore(10)
 
 
 def _run_in_proactor(url: str, netscape: bool) -> str:
-    loop = asyncio.ProactorEventLoop()
+    loop = asyncio.new_event_loop()
     try:
         return loop.run_until_complete(_fetch_cookies(url, netscape))
     finally:
