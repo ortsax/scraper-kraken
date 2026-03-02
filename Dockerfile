@@ -10,6 +10,8 @@ RUN git clone https://github.com/realastrox11/Orsta.py .
 
 RUN uv sync --frozen --no-cache
 
+RUN uv run playwright install chromium --with-deps
+
 EXPOSE 8000
 
 CMD ["uv", "run", "python", "main.py"]
