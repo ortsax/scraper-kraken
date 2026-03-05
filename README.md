@@ -1,4 +1,4 @@
-## Scraper Kraken
+## Jinux
 
 To get started with the project, ensure you have Python 3.14 and `uv` installed.
 
